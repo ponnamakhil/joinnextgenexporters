@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Merchant Exporter | Akhil Global Exports Merchant Exporter Incubation Program</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#050C18',
+                            900: '#0B192C',
+                            800: '#132743',
+                            700: '#1E3A5F',
+                        },
+                        gold: {
+                            600: '#B45309',
+                            500: '#D99B26',
+                            400: '#F59E0B',
+                            300: '#FCD34D',
+                        },
+                        emerald: {
+                            600: '#059669',
+                            500: '#10B981',
+                            400: '#34D399',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .white-grid-bg {
+            background-color: #FFFFFF;
+            background-image: radial-gradient(rgba(11, 25, 44, 0.06) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .executive-shadow {
+            box-shadow: 0 12px 32px -8px rgba(11, 25, 44, 0.08), 0 4px 12px -4px rgba(11, 25, 44, 0.04);
+        }
+        .gold-shadow {
+            box-shadow: 0 14px 34px -6px rgba(217, 155, 38, 0.28);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #FFFFFF !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- ==================== 1. STICKY EXECUTIVE HEADER ==================== -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Official Brand Emblem Logo -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <div class="w-28 h-28   p-1 flex items-center justify-center shadow-sm overflow-hidden shrink-0 group-hover:border-gold-500 transition-colors">
+                        <img src="logo.png"
+                             alt="NextGen Exporters by Akhil Global Exports Logo"
+                             class="w-full h-full object-contain"
+                             onerror="this.onerror=null; this.src='https://placehold.co/96x96/FFFFFF/0B192C?text=NEXTGEN';">
+                    </div>
+                    <div>
+                        <span class="font-display font-extrabold text-base sm:text-lg tracking-tight text-navy-900 block leading-none">
+                            NEXTGEN <span class="text-gold-500">EXPORTERS</span>
+                        </span>
+                        <span class="text-[11px] font-bold tracking-wider uppercase text-slate-500 mt-1 block">
+                            by Akhil Global Exports
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                    <a href="#product-ranges" class="hover:text-navy-900 transition-colors">Product Ranges & USP</a>
+                    <a href="#curriculum" class="hover:text-navy-900 transition-colors">Curriculum & Checklists</a>
+                    <a href="#trade-network" class="hover:text-navy-900 transition-colors">Trade Network</a>
+                    <a href="#fob-calculator" class="hover:text-navy-900 transition-colors">FOB Calculator</a>
+                    <a href="#membership" class="hover:text-navy-900 transition-colors">Membership</a>
+                </nav>
+
+                <!-- Primary CTA & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openEnrollModal('Akhil Global Exports Merchant Exporter Incubation Program')" class="hidden sm:inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold text-sm px-5 py-2.5 rounded-xl border border-gold-500/40 shadow-md transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                        <span>Apply Now</span>
+                        <i class="fa-solid fa-arrow-right text-gold-400 text-xs"></i>
+                    </button>
+                    <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-navy-900 hover:bg-slate-100 transition-colors">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+            <a href="#product-ranges" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">Exportable Product Ranges & USP</a>
+            <a href="#curriculum" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">20-Module Curriculum & Checklists</a>
+            <a href="#trade-network" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">Verified Trade & Logistics Network</a>
+            <a href="#fob-calculator" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">FOB / CIF Export Calculator</a>
+            <a href="#future-roadmap" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">Your Future Trajectory</a>
+            <a href="#membership" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-navy-900 hover:bg-slate-50 font-semibold">₹2,47,000 Membership & Who It's For</a>
+            <div class="pt-2">
+                <button onclick="closeMobileMenu(); openEnrollModal('Akhil Global Exports Merchant Exporter Incubation Program');" class="w-full py-3 rounded-xl bg-navy-900 text-white font-extrabold text-center shadow-md">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO SECTION & FOUNDER SPOTLIGHT ==================== -->
+    <section class="white-grid-bg border-b border-slate-200 pt-12 pb-20 lg:pt-20 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left 7 Columns: Title, Program Format, Motto & CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2.5 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 shadow-sm">
+                        <span class="px-2.5 py-0.5 rounded-full bg-gold-500 text-white text-xs font-extrabold uppercase tracking-wider">Telugu + English Mix</span>
+                        <span class="text-xs sm:text-sm font-bold text-navy-900">Exclusively Built for Telugu States • Zero Prior Business Experience Required</span>
+                    </div>
+
+                    <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[3.1rem] text-navy-900 tracking-tight leading-[1.15]">
+                        Become a Merchant Exporter with the <span class="text-gold-500">Akhil Global Exports</span> Merchant Exporter Incubation Program
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Designed especially for entrepreneurs, students, and working professionals from <strong class="text-navy-900">Telugu states</strong> in a practical <strong class="text-navy-900">Telugu + English mix</strong>. Even with <strong class="text-navy-900">zero prior business experience</strong>, you step straight into a structured execution blueprint—backed by Pan-India verified manufacturers, <strong class="text-navy-900">40+ packaging houses</strong>, and our <strong class="text-navy-900">1,510+ physical logistics & customs clearance network</strong>.
+                    </p>
+
+                    <!-- Core Motto Banner -->
+                    <div class="inline-block bg-navy-900 text-white px-6 py-3.5 rounded-2xl border-l-4 border-gold-500 shadow-md">
+                        <p class="font-display font-bold text-sm sm:text-lg tracking-tight">
+                            “We don't experience Business here. <span class="text-gold-400">We just silently Build it.</span>”
+                        </p>
+                    </div>
+
+                    <!-- Primary & Secondary CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openEnrollModal('Akhil Global Exports Merchant Exporter Incubation Program')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-extrabold text-base border border-gold-500/50 shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 cursor-pointer">
+                            <span>Apply for Incubation</span>
+                            <i class="fa-solid fa-arrow-right text-gold-400"></i>
+                        </button>
+                        <a href="#trade-network" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-navy-900 border-2 border-slate-200 font-bold text-base transition-all flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-truck-fast text-gold-500"></i>
+                            <span>Explore Verified Trade Network</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right 5 Columns: Founder Portrait Card & Dual Philosophy Quotes -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 executive-shadow space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="text-xs font-extrabold uppercase tracking-widest text-navy-900">Founder & Chief Mentor</span>
+                            <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-800 text-[11px] font-extrabold border border-amber-200">
+                                <i class="fa-solid fa-award text-gold-500 mr-1"></i>Mid-Day 2026: India's 10 Inspiring Entrepreneurs
+                            </span>
+                        </div>
+
+                        <!-- Portrait Container -->
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-200 aspect-[4/4] bg-slate-100">
+                            <img src="my_profile.jpeg"
+                                 alt="Akhil Kumar Ponnam - Founder, Akhil Global Exports"
+                                 class="w-full h-full object-cover object-top"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x600/0B192C/D99B26?text=Akhil+Kumar+Ponnam';">
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950 via-navy-950/85 to-transparent p-5">
+                                <h2 class="font-display font-extrabold text-2xl text-white">Akhil Kumar Ponnam</h2>
+                                <p class="text-xs sm:text-sm font-semibold text-gold-400">Founder & CEO, Akhil Global Exports • DITC Trade Desk</p>
+                            </div>
+                        </div>
+
+                        <!-- Dual Inspiring Quotes -->
+                        <div class="space-y-3">
+                            <div class="bg-slate-50 rounded-2xl p-4 border-l-4 border-navy-900">
+                                <p class="text-xs sm:text-sm text-slate-700 italic font-medium">
+                                    “Everyone is a student till the end of their lives.”
+                                </p>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mt-1 block">— Dr. A.P.J. Abdul Kalam</span>
+                            </div>
+
+                            <div class="bg-amber-50/70 rounded-2xl p-4 border-l-4 border-gold-500">
+                                <p class="text-xs sm:text-sm text-navy-900 italic font-bold">
+                                    “Be a student who learns and earns as well.”
+                                </p>
+                                <span class="text-[11px] font-bold uppercase tracking-wider text-gold-600 mt-1 block">— Akhil Kumar Ponnam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. WIDE VARIETY OF EXPORTABLE PRODUCT RANGES & MARKET-ENTRY USP ==================== -->
+    <section id="product-ranges" class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-navy-900 text-gold-400 font-bold text-xs uppercase tracking-wider mb-3">
+                    Pan-India Manufacturer Tie-Ups • Multi-Sector Export Catalog
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    Wide Variety of Exportable Product Ranges You Can Trade
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    You do not need to own a factory or restrict yourself to a single item. Source directly from verified Pan-India manufacturers across <strong class="text-navy-900">8 high-demand global product ranges</strong>—supported by <strong class="text-navy-900">40+ empanelled packaging houses covering 50g retail pouches to 50kg bulk export packings</strong>.
+                </p>
+            </div>
+
+            <!-- Interactive Category Filter Tabs -->
+            <div id="productFilterBar" class="flex flex-wrap items-center justify-center gap-2.5 mb-10">
+                <button onclick="filterProductRanges('all')" data-cat="all" class="prod-filter-btn px-4 py-2 rounded-full bg-navy-900 text-white text-xs sm:text-sm font-bold shadow-sm cursor-pointer transition-all">
+                    All 8 Product Ranges
+                </button>
+                <button onclick="filterProductRanges('agro')" data-cat="agro" class="prod-filter-btn px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 text-xs sm:text-sm font-bold cursor-pointer transition-all">
+                    Agro, Spices & Processed Foods
+                </button>
+                <button onclick="filterProductRanges('industrial')" data-cat="industrial" class="prod-filter-btn px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 text-xs sm:text-sm font-bold cursor-pointer transition-all">
+                    Chemicals & Engineering Goods
+                </button>
+                <button onclick="filterProductRanges('healthcare')" data-cat="healthcare" class="prod-filter-btn px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 text-xs sm:text-sm font-bold cursor-pointer transition-all">
+                    Healthcare & Medical Devices
+                </button>
+            </div>
+
+            <!-- 8 Visual Export Product Cards Grid -->
+            <div id="productRangesGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                <!-- Populated dynamically via JS with real photographic images -->
+            </div>
+
+            <!-- 40+ Empanelled Packaging Houses Strip -->
+            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-gold-500/40 executive-shadow flex flex-col md:flex-row items-center justify-between gap-4 mb-14">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500 text-white flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-boxes-packing"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600 block">Custom Private Label & Bulk Packaging Ready</span>
+                        <h4 class="font-display font-extrabold text-base sm:text-lg text-navy-900">
+                            40+ Empanelled Packaging Houses (50g Retail Pouches to 50kg Bulk Export Packings)
+                        </h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                            Every product range above comes with verified packaging unit tie-ups for stand-up pouches (50g–1kg), BOPP/PP woven bags (25kg–50kg), corrugated export cartons, and palletization.
+                        </p>
+                    </div>
+                </div>
+                <a href="#trade-network" class="shrink-0 px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm transition-colors">
+                    View Packaging & Logistics →
+                </a>
+            </div>
+
+            <!-- Market-Entry USP Comparison: Africa, Asia & North America vs Gulf & Europe -->
+            <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 executive-shadow">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600 block mb-1">Akhil Global Exports Strategic USP</span>
+                    <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-navy-900">
+                        Why We Launch in Africa, Asia & North America First—Before Gulf or Europe
+                    </h3>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2">
+                        Most new exporters blindly chase Dubai or Qatar where thousands of traders compete on razor-thin margins, or get stuck in heavy European regulatory paperwork. Our students enter where Indian supply is immediately ready to ship and scale worldwide from there.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <!-- Primary Launchpad: Africa, Asia & North America -->
+                    <div class="lg:col-span-2 bg-navy-900 text-white rounded-2xl p-6 sm:p-8 border-2 border-gold-500">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full bg-gold-500 text-navy-950 text-xs font-extrabold uppercase">Primary Market-Entry Launchpad</span>
+                            <span class="text-xs font-bold text-emerald-400"><i class="fa-solid fa-circle-check mr-1"></i>High Readiness & Stronger Margins</span>
+                        </div>
+                        <h4 class="font-display font-extrabold text-2xl text-white mb-4">
+                            Africa, Asia & North America (USA & Canada)
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-sm">
+                            <div class="bg-navy-800 p-4 rounded-xl border border-white/10">
+                                <strong class="text-gold-400 block text-base mb-1">African Markets</strong>
+                                <p class="text-slate-300 leading-relaxed">Massive import appetite for Indian rice, pulses, spices, chemicals, and packaging with practical entry standards and repeat container orders.</p>
+                            </div>
+                            <div class="bg-navy-800 p-4 rounded-xl border border-white/10">
+                                <strong class="text-gold-400 block text-base mb-1">Asian Markets</strong>
+                                <p class="text-slate-300 leading-relaxed">Fast transit times, strong bilateral trade ties, and steady demand across Southeast Asia, South Asia, and East Asia.</p>
+                            </div>
+                            <div class="bg-navy-800 p-4 rounded-xl border border-white/10">
+                                <strong class="text-gold-400 block text-base mb-1">North America</strong>
+                                <p class="text-slate-300 leading-relaxed">High-ticket institutional and ethnic retail buyers in the USA & Canada paying premium prices for private-label & bulk Indian products.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Expansion: Gulf & Europe -->
+                    <div class="space-y-4">
+                        <div class="bg-amber-50/70 rounded-2xl p-5 border border-amber-200">
+                            <span class="px-2.5 py-0.5 rounded bg-amber-200/70 text-amber-950 text-[11px] font-extrabold uppercase">High Competition Zone</span>
+                            <h5 class="font-display font-extrabold text-lg text-navy-900 mt-2">Gulf Countries (Dubai / Qatar)</h5>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Saturated with thousands of existing suppliers serving the same buyers—leading to price wars and low margins for beginners.
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+                            <span class="px-2.5 py-0.5 rounded bg-slate-200 text-slate-800 text-[11px] font-extrabold uppercase">Phase-2 Expansion</span>
+                            <h5 class="font-display font-extrabold text-lg text-navy-900 mt-2">European Countries</h5>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Strict lab testing, MRL limits, and heavy compliance audits make Europe ideal only after you generate cash flow in Africa, Asia, and North America.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4. COMPLETE 20-MODULE CURRICULUM & SEQUENTIAL CHECKLISTS ==================== -->
+    <section id="curriculum" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold text-xs uppercase tracking-wider mb-3">
+                        Step-by-Step Execution & Continuously Updated Syllabus
+                    </span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                        Complete Curriculum & Interactive Launch Checklists
+                    </h2>
+                    <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                        Every topic from our master syllabus—including <strong class="text-navy-900">Push vs. Pull Marketing, Tools + Action + Backend, LinkedIn Marketing Tools, and Lead Bucket Lists</strong>—is structured sequentially and continuously updated as global trade evolves. Tick off your progress below.
+                    </p>
+                </div>
+
+                <button onclick="window.print()" class="no-print self-start lg:self-auto px-5 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm shadow-sm flex items-center gap-2 cursor-pointer transition-colors">
+                    <i class="fa-solid fa-print text-gold-400"></i>
+                    <span>Print Launch & Market Checklist</span>
+                </button>
+            </div>
+
+            <!-- STEP 0: MANDATORY REGISTRATIONS + 3 OPTIONS -->
+            <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 executive-shadow mb-10">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600">Step 0 • Mandatory Pre-Classroom Setup</span>
+                        <h3 class="font-display font-extrabold text-xl text-navy-900">4 Essential Export Registrations Checklist</h3>
+                    </div>
+                    <span id="regProgressText" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-navy-900 text-xs font-extrabold">
+                        0 / 4 Completed (0%)
+                    </span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden mb-5">
+                    <div id="regProgressBar" class="h-full bg-gradient-to-r from-navy-900 to-gold-500 transition-all duration-300" style="width: 0%;"></div>
+                </div>
+                <div id="regChecklistGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"></div>
+
+                <!-- 3 Registration Routes -->
+                <div class="grid md:grid-cols-3 gap-4 pt-4 border-t border-slate-200 text-xs">
+                    <div class="bg-white p-4 rounded-2xl border border-gold-500">
+                        <strong class="text-navy-900 block text-sm mb-1">Option 1: DIY with Accountability Partner (₹500)</strong>
+                        <p class="text-slate-600">Register yourself as a Sole Proprietor in just ₹500 with step-by-step guidance from our accountability partner.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200">
+                        <strong class="text-navy-900 block text-sm mb-1">Option 2: Your Own Chartered Accountant</strong>
+                        <p class="text-slate-600">Coordinate with your existing CA if incorporating a Private Limited (Pvt Ltd) company or LLP.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200">
+                        <strong class="text-navy-900 block text-sm mb-1">Option 3: Recommended CA Partner Network</strong>
+                        <p class="text-slate-600">Use our vetted CA suggestions at pre-negotiated rates significantly lower than open market fees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CLASSROOM 1: FOUNDATION CLASSROOM -->
+            <div id="classroom-1" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 executive-shadow mb-10">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-navy-900">Classroom 01 • Core Export Foundations & Field Execution</span>
+                        <h3 class="font-display font-extrabold text-xl sm:text-2xl text-navy-900">Foundation Classroom Checklist (18 Sequential Modules)</h3>
+                    </div>
+                    <span id="c1ProgressBadge" class="px-3.5 py-1.5 rounded-full bg-slate-100 text-navy-900 text-xs font-extrabold">
+                        0 / 18 Completed (0%)
+                    </span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden mb-6">
+                    <div id="c1ProgressBar" class="h-full bg-gradient-to-r from-navy-900 to-gold-500 transition-all duration-300" style="width: 0%;"></div>
+                </div>
+                <div id="classroom1Grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5"></div>
+            </div>
+
+            <!-- CLASSROOM 2: SALES CLASSROOM -->
+            <div id="classroom-2" class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 executive-shadow mb-10">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-gold-600">Classroom 02 • Global Buyer Acquisition & Closing</span>
+                        <h3 class="font-display font-extrabold text-xl sm:text-2xl text-navy-900">Sales Classroom Checklist (8 Outbound & Inbound Modules)</h3>
+                    </div>
+                    <span id="c2ProgressBadge" class="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-navy-900 text-xs font-extrabold">
+                        0 / 8 Completed (0%)
+                    </span>
+                </div>
+                <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden mb-6">
+                    <div id="c2ProgressBar" class="h-full bg-gradient-to-r from-gold-500 to-emerald-500 transition-all duration-300" style="width: 0%;"></div>
+                </div>
+                <div id="classroom2Grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+            </div>
+
+            <!-- CLASSROOM 3: LIVE REPORTING CLASSROOM -->
+            <div id="classroom-3" class="bg-navy-900 text-white rounded-3xl p-6 sm:p-10 border-2 border-gold-500 shadow-xl">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-7 space-y-4">
+                        <span class="px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 text-xs font-extrabold uppercase tracking-wider inline-block">
+                            Classroom 03 • 2 Live Sessions Every Week
+                        </span>
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white">
+                            Live Reporting Classroom (Execution-Only Deal Room)
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Once you complete your Step 0 Registrations, Foundation Checklist, and Sales Classroom milestones, you unlock <strong class="text-gold-300">2 scheduled live deal-reporting sessions every week</strong> to troubleshoot buyer calls, verify supplier quotations, and close active export orders.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5 bg-navy-950/90 rounded-2xl p-6 border border-gold-500/30 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-gold-400">Live Reporting Eligibility</span>
+                            <span id="c3StatusPill" class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-extrabold">
+                                <i class="fa-solid fa-lock mr-1"></i>In Progress
+                            </span>
+                        </div>
+                        <div class="space-y-2 text-xs">
+                            <div class="flex justify-between p-2.5 rounded-xl bg-navy-900"><span>Step 0: Registrations</span><span id="c3RegStat" class="font-bold text-gold-400">0/4</span></div>
+                            <div class="flex justify-between p-2.5 rounded-xl bg-navy-900"><span>Classroom 1: Foundations</span><span id="c3C1Stat" class="font-bold text-gold-400">0/18</span></div>
+                            <div class="flex justify-between p-2.5 rounded-xl bg-navy-900"><span>Classroom 2: Sales Execution</span><span id="c3C2Stat" class="font-bold text-gold-400">0/8</span></div>
+                        </div>
+                        <p id="c3UnlockMessage" class="text-xs text-slate-400">
+                            Tick off all items in Step 0, Classroom 1, and Classroom 2 above to unlock your weekly Live Reporting seat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 5. VERIFIED TRADE & LOGISTICS INFRASTRUCTURE ECOSYSTEM ==================== -->
+    <section id="trade-network" class="py-16 lg:py-24 bg-navy-950 text-white border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/20 text-gold-300 border border-gold-500/40 font-extrabold text-xs uppercase tracking-widest mb-3">
+                    Real Physical Execution Infrastructure • Included in Your Membership
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+                    Direct Access to <span class="text-gold-400">1,510+ Verified Trade & Logistics Partners</span> & Editable Trade Templates
+                </h2>
+                <p class="text-slate-300 mt-4 text-base sm:text-lg leading-relaxed">
+                    Courses can be taught anywhere—what sets Akhil Global Exports apart is immediate access to our verified Pan-India transport, ocean & air shipping, customs clearance, cold storage, packaging, warehouse networks, and ready-to-use editable export invoices.
+                </p>
+            </div>
+
+            <!-- Dedicated Photographic Cards for Each Physical Infrastructure Pillar -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                
+                <!-- 1. 370+ Inland Transportation Partners (Truck Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80"
+                                 alt="370+ Inland Transportation Freight Trucks"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=370%2B+Inland+Logistics+Trucks';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                370+ Inland Partners
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                370+ Inland Transportation & Road Logistics Partners
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Direct network of <strong class="text-gold-300">370+ verified inland transportation operators</strong> across India for factory-to-port container haulage, LCL/FCL pickup, GPS-tracked trailers, and timely port gate-in support.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-gold-400">
+                        <span><i class="fa-solid fa-truck-fast mr-1.5"></i>Factory-to-Port Haulage</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+                <!-- 2. 370+ Shipping & Marine Insurance Providers (Container Ship Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=900&q=80"
+                                 alt="370+ Container Ships and Marine Insurance Providers"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=370%2B+Shipping+%26+Marine+Insurance';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                370+ Shipping & Marine
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                370+ Verified Shipping & Marine Insurance Providers
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Book competitive ocean slots with <strong class="text-gold-300">370+ verified shipping lines, NVOCC operators, and marine cargo insurance providers</strong>—protecting every FCL and LCL container shipment globally.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-gold-400">
+                        <span><i class="fa-solid fa-ship mr-1.5"></i>Ocean FCL/LCL & Marine Cover</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+                <!-- 3. 370+ Air Cargo & Express Logistics Partners (Cargo Plane Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&w=900&q=80"
+                                 alt="370+ Air Cargo and Express Logistics Partners"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=370%2B+Air+Cargo+Logistics';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                370+ Air Cargo Partners
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                370+ Verified Air Cargo & Express Partners
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Fast air-freight booking support through <strong class="text-gold-300">370+ verified air cargo & international courier partners</strong> for buyer product samples, urgent commercial dispatches, and high-value perishables.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-gold-400">
+                        <span><i class="fa-solid fa-plane-departure mr-1.5"></i>Air Freight & Sample Dispatch</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+                <!-- 4. 400+ CHA Agents: Indian Export & Origin/Destination Import Clearance (Documentation Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+                                 alt="400+ CHA Agents for Export and Import Customs Clearance"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=400%2B+CHA+Clearance+%26+Docs';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                400+ CHA & Clearance
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                400+ CHA Agents: Indian Export & Origin/Destination Import Clearance
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                End-to-end customs handling via <strong class="text-gold-300">400+ licensed CHA agents</strong> covering <strong class="text-white">Indian export clearance</strong>, <strong class="text-white">import clearance in the origin/destination country</strong>, Shipping Bills, BL, COO, Phyto, and full documentation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-gold-400">
+                        <span><i class="fa-solid fa-file-signature mr-1.5"></i>Dual-Port Customs & Docs</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+                <!-- 5. 100+ Cold Storage Units for Perishables (Cold Storage Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80"
+                                 alt="100+ Cold Storage Units for Perishables"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=100%2B+Cold+Storage+Units';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-emerald-400 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                100+ Cold Storage Units
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                100+ Verified Cold Storage Units (Perishables Ready)
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Direct directory access to <strong class="text-gold-300">100+ temperature-controlled cold storage units and pre-cooling packhouses</strong>—essential when exporting fresh fruits, vegetables, spices, dairy, frozen foods, or marine perishables.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-emerald-400">
+                        <span><i class="fa-solid fa-snowflake mr-1.5"></i>Reefer & Cold-Chain Access</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+                <!-- 6. 40+ Packaging Units (50g to 50kg Bulk) & Verified Warehouses List (Packaging/Warehouse Photo) -->
+                <div class="bg-navy-900 rounded-3xl overflow-hidden border border-white/10 hover:border-gold-500/60 shadow-xl transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-52 overflow-hidden bg-navy-800">
+                            <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80"
+                                 alt="40+ Packaging Units (50g to 50kg) and Verified Warehouses"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x450/0B192C/D99B26?text=40%2B+Packaging+Units+%26+Warehouses';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/30 to-transparent"></div>
+                            <span class="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-wider shadow-md">
+                                40+ Packaging & Warehouses
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-display font-extrabold text-xl text-white mb-2">
+                                40+ Packaging Units (50g to 50kg) & Verified Warehouses List
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Partner with <strong class="text-gold-300">40+ export packaging units covering 50 grams retail pouches up to 50 kg bulk packings</strong>, plus verified dry & port-side warehouses for multi-product consolidation and container stuffing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold text-gold-400">
+                        <span><i class="fa-solid fa-box-open mr-1.5"></i>50g Retail to 50kg Bulk</span>
+                        <span>Direct Directory Access</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 7. Ready-to-Use, Directly Editable Quotation, Proforma & Commercial Invoice Templates Banner -->
+            <div class="mt-10 bg-navy-900 border-2 border-gold-500/60 rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-xl">
+                <div class="flex items-start gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-gold-500 text-navy-950 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <div>
+                        <span class="px-3 py-0.5 rounded-full bg-gold-500/20 text-gold-300 text-xs font-extrabold uppercase tracking-wider">Plug-and-Play Export Paperwork</span>
+                        <h4 class="font-display font-extrabold text-xl sm:text-2xl text-white mt-1">
+                            Ready-to-Use, Directly Editable Quotation, Proforma Invoice & Commercial Invoice Templates
+                        </h4>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                            Stop wasting weeks formatting international trade documents. Get our institutional, directly editable <strong class="text-gold-300">Export Quotation, Proforma Invoice (PI), Commercial Invoice (CI), and Packing List</strong> templates—just plug in your company logo, HS code, bank AD details, and send to global buyers immediately.
+                        </p>
+                    </div>
+                </div>
+                <a href="#membership" class="shrink-0 px-6 py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 font-extrabold text-sm shadow-lg transition-all">
+                    See Full ₹2,47,000 Value →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 6. INTERACTIVE FOB / CIF EXPORT PRICING CALCULATOR ==================== -->
+    <section id="fob-calculator" class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-navy-900 text-gold-400 font-bold text-xs uppercase tracking-wider mb-3">
+                    Live Export Pricing & Margin Tool
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    FOB / CIF Export Pricing & Margin Calculator
+                </h2>
+                <p class="text-slate-600 mt-2">
+                    Calculate per-unit and total container FOB & CIF quotations in USD alongside your net INR profit margin and government RoDTEP incentives.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl executive-shadow border border-slate-200 overflow-hidden grid lg:grid-cols-12">
+                <!-- Inputs Column (7 Columns) -->
+                <div class="lg:col-span-7 p-6 sm:p-10 space-y-5">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                        <h3 class="font-display font-bold text-lg text-navy-900">Shipment Cost & Quantity Inputs (INR)</h3>
+                        <button onclick="resetCalculator()" class="text-xs font-bold text-gold-600 hover:underline cursor-pointer">Reset Sample Container</button>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="calcUnits" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">1. Total Shipment Quantity (Units / Kg / MT)</label>
+                            <input type="number" id="calcUnits" value="25000" min="1" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">e.g., 25,000 kg (25 MT 20ft FCL container)</span>
+                        </div>
+
+                        <div>
+                            <label for="calcProcure" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">2. Manufacturer Procurement Cost (₹)</label>
+                            <input type="number" id="calcProcure" value="1050000" min="0" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">Direct ex-works factory cost</span>
+                        </div>
+
+                        <div>
+                            <label for="calcPackaging" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">3. Packaging & Labeling Cost (₹)</label>
+                            <input type="number" id="calcPackaging" value="65000" min="0" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">50g–50kg packing, cartons & palletizing</span>
+                        </div>
+
+                        <div>
+                            <label for="calcPortCha" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">4. Inland Transport & CHA Port Charges (₹)</label>
+                            <input type="number" id="calcPortCha" value="55000" min="0" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">Factory-to-port haulage, THC & customs</span>
+                        </div>
+
+                        <div>
+                            <label for="calcFreight" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">5. Ocean / Air Freight & Insurance (₹)</label>
+                            <input type="number" id="calcFreight" value="140000" min="0" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">Added for CIF destination port quote</span>
+                        </div>
+
+                        <div>
+                            <label for="calcUsdRate" class="block text-xs font-bold uppercase text-slate-600 mb-1.5">6. USD / INR Exchange Rate (₹)</label>
+                            <input type="number" id="calcUsdRate" value="84.50" step="0.10" min="1" oninput="calculateExportQuote()" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 font-bold text-navy-900 focus:outline-none focus:border-gold-500">
+                            <span class="text-[11px] text-slate-400">Bank TT buying rate</span>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5 pt-2">
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1.5">
+                                <label for="calcMargin">7. Target Profit + Negotiation Buffer (%)</label>
+                                <span id="calcMarginLabel" class="text-navy-900 font-extrabold">18%</span>
+                            </div>
+                            <input type="range" id="calcMargin" value="18" min="5" max="45" oninput="calculateExportQuote()" class="w-full accent-navy-900 cursor-pointer">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold uppercase text-slate-600 mb-1.5">
+                                <label for="calcRodtep">8. RoDTEP / Duty Drawback Credit (%)</label>
+                                <span id="calcRodtepLabel" class="text-emerald-600 font-extrabold">1.5%</span>
+                            </div>
+                            <input type="range" id="calcRodtep" value="1.5" step="0.5" min="0" max="5" oninput="calculateExportQuote()" class="w-full accent-emerald-600 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Column (5 Columns) -->
+                <div class="lg:col-span-5 bg-navy-900 text-white p-6 sm:p-10 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-gold-400">Export Quotation Summary</span>
+                        <h3 class="font-display font-bold text-xl mt-1 mb-6">Container & Per-Unit USD Quotes</h3>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-2xl bg-navy-800 border border-white/10">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs uppercase font-bold text-slate-400">Total FOB Quote</span>
+                                    <span id="outFobUnit" class="px-2.5 py-0.5 rounded bg-white/10 text-gold-300 text-xs font-bold">$0.65 / unit</span>
+                                </div>
+                                <div id="outFobUsd" class="text-2xl sm:text-3xl font-display font-extrabold text-white mt-1">$16,338 USD</div>
+                                <div id="outFobInr" class="text-xs text-slate-400 mt-0.5">₹13,80,600 INR Base FOB Value</div>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-navy-800 border border-gold-500/30">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs uppercase font-bold text-gold-400">Total CIF Quote</span>
+                                    <span id="outCifUnit" class="px-2.5 py-0.5 rounded bg-gold-500/20 text-gold-300 text-xs font-bold">$0.72 / unit</span>
+                                </div>
+                                <div id="outCifUsd" class="text-2xl sm:text-3xl font-display font-extrabold text-gold-400 mt-1">$17,995 USD</div>
+                                <div id="outCifInr" class="text-xs text-slate-400 mt-0.5">₹15,20,600 INR Total CIF Invoice</div>
+                            </div>
+
+                            <div class="p-5 rounded-2xl bg-emerald-950/90 border border-emerald-500/40">
+                                <span class="text-xs uppercase font-bold text-emerald-300 block">Net Merchant Profit (INR)</span>
+                                <div id="outNetProfit" class="text-3xl font-display font-extrabold text-white mt-1">₹2,31,309</div>
+                                <div id="outIncentiveSplit" class="text-xs text-emerald-200 mt-1">Includes ₹20,709 RoDTEP export incentive</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="openEnrollModal('Export Pricing & Deal Desk')" class="mt-6 w-full py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 font-extrabold text-sm shadow-lg transition-all cursor-pointer">
+                        Verify Your Live Quote with Our Mentors →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 7. YOUR FUTURE TRAJECTORY ROADMAP (MONTH 1 TO YEAR 1+) ==================== -->
+    <section id="future-roadmap" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold text-xs uppercase tracking-wider mb-3">
+                    Your Merchant Exporter Growth Trajectory
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    See Your Future Clearly: From Month 1 Launch to Global Scale
+                </h2>
+                <p class="text-slate-600 mt-3 text-base">
+                    A structured corporate progression designed for Telugu entrepreneurs building a sustainable international merchant export enterprise.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 executive-shadow">
+                    <span class="px-3 py-1 rounded-full bg-navy-900 text-gold-400 text-xs font-extrabold uppercase">Month 01</span>
+                    <h3 class="font-display font-extrabold text-xl text-navy-900 mt-4 mb-2">Company Setup & Supplier Lock-In</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Complete Udyam, GST, IEC, and Current Account; finalize your product selection, lock in direct factory pricing, and configure your editable Quotation & Proforma Invoice templates.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 executive-shadow">
+                    <span class="px-3 py-1 rounded-full bg-gold-500 text-white text-xs font-extrabold uppercase">Months 02 – 03</span>
+                    <h3 class="font-display font-extrabold text-xl text-navy-900 mt-4 mb-2">Active Buyer Outreach & Sample Dispatch</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Launch LinkedIn, Embassy data, and Cold-Call-to-Zoom outreach into Africa, Asia, and North America; dispatch verified samples via our 370+ air cargo partners and negotiate FOB/CIF quotes.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-200 executive-shadow">
+                    <span class="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-extrabold uppercase">Months 04 – 06</span>
+                    <h3 class="font-display font-extrabold text-xl text-navy-900 mt-4 mb-2">First Commercial Shipments & USD Realization</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Execute your maiden LCL/FCL shipments using our 370+ inland transporters, 370+ shipping lines, 400+ CHA customs agents, and strict LC / Advance TT payment terms.
+                    </p>
+                </div>
+
+                <div class="bg-navy-900 text-white rounded-3xl p-6 border-2 border-gold-500 shadow-lg">
+                    <span class="px-3 py-1 rounded-full bg-gold-500 text-navy-950 text-xs font-extrabold uppercase">Month 07 – Year 1+</span>
+                    <h3 class="font-display font-extrabold text-xl text-white mt-4 mb-2">Repeat Buyers, Private Labels & $100K+ Orders</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                        Convert trial buyers into recurring monthly container contracts, launch private-label SKUs with our 40+ packaging houses, and unlock <strong class="text-gold-300">$100K+ USD order financial support</strong> via the DITC Trade Desk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 8. SINGLE UNIFIED MEMBERSHIP (₹2,47,000 INCL. GST) & DITC TRADE DESK ==================== -->
+    <section id="membership" class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-navy-900 text-gold-400 font-bold text-xs uppercase tracking-wider mb-3">
+                    One Unified Membership • Complete Infrastructure + Practical Incubation
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    Total Deliverable Value Breakdown
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    One transparent investment gives every Telugu Merchant Exporter complete mentorship, directly editable trade paperwork, and immediate operational access to our <strong class="text-navy-900">1,510+ verified logistics, shipping, air, CHA, cold storage, and packaging partners</strong>.
+                </p>
+            </div>
+
+            <!-- Value Breakdown + Single Price Card -->
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-14">
+                <!-- Left 7 Columns: Deliverable Value Table -->
+                <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 executive-shadow overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="bg-navy-900 px-6 py-4 flex items-center justify-between text-white">
+                            <span class="font-display font-bold text-base">Program & Verified Infrastructure Deliverables</span>
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-gold-400">Standalone Value</span>
+                        </div>
+
+                        <div class="divide-y divide-slate-100 text-sm">
+                            <div class="p-5 flex items-start justify-between gap-4 bg-amber-50/40">
+                                <div>
+                                    <strong class="text-navy-900 block">370+ Inland Transportation, 370+ Shipping & Marine, and 370+ Air Cargo Partners</strong>
+                                    <span class="text-xs text-slate-600">Pan-India factory-to-port haulage, ocean FCL/LCL lines, marine insurance & air freight network.</span>
+                                </div>
+                                <span class="font-display font-extrabold text-navy-900 shrink-0">₹2,00,000 Value</span>
+                            </div>
+
+                            <div class="p-5 flex items-start justify-between gap-4 bg-amber-50/40">
+                                <div>
+                                    <strong class="text-navy-900 block">400+ CHA Agents (Indian Export & Origin/Destination Import Clearance + Docs)</strong>
+                                    <span class="text-xs text-slate-600">End-to-end customs clearance at both ports plus complete export documentation support.</span>
+                                </div>
+                                <span class="font-display font-extrabold text-navy-900 shrink-0">₹1,50,000 Value</span>
+                            </div>
+
+                            <div class="p-5 flex items-start justify-between gap-4">
+                                <div>
+                                    <strong class="text-navy-900 block">100+ Cold Storage Units & 40+ Packaging Units (50g to 50kg) + Warehouses List</strong>
+                                    <span class="text-xs text-slate-600">Perishable cold chains, private-label 50g pouches to 50kg bulk packings & consolidation warehouses.</span>
+                                </div>
+                                <span class="font-display font-extrabold text-navy-900 shrink-0">₹1,25,000 Value</span>
+                            </div>
+
+                            <div class="p-5 flex items-start justify-between gap-4">
+                                <div>
+                                    <strong class="text-navy-900 block">Ready-to-Use, Directly Editable Quotation, Proforma & Commercial Invoice Templates</strong>
+                                    <span class="text-xs text-slate-600">Plug-and-play institutional export trade documents ready for immediate buyer dispatch.</span>
+                                </div>
+                                <span class="font-display font-extrabold text-navy-900 shrink-0">₹50,000 Value</span>
+                            </div>
+
+                            <div class="p-5 flex items-start justify-between gap-4">
+                                <div>
+                                    <strong class="text-navy-900 block">Complete Telugu + English Incubation Curriculum + Classrooms 1, 2 & 3</strong>
+                                    <span class="text-xs text-slate-600">20+ execution modules, dedicated accountability partner & 2x/week live deal reporting.</span>
+                                </div>
+                                <span class="font-display font-extrabold text-navy-900 shrink-0">₹1,25,000 Value</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-slate-50 border-t border-slate-200 flex items-center justify-between">
+                        <span class="font-display font-bold text-sm text-slate-600">Total Deliverable Ecosystem Value</span>
+                        <span class="font-display font-extrabold text-lg text-navy-900">₹6,50,000+</span>
+                    </div>
+                </div>
+
+                <!-- Right 5 Columns: Single Clean Total Price Card (₹2,47,000 Incl. 18% GST) -->
+                <div class="lg:col-span-5 bg-white rounded-3xl p-8 sm:p-10 border-2 border-gold-500 gold-shadow flex flex-col justify-between">
+                    <div class="space-y-5">
+                        <div>
+                            <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500 text-white text-xs font-extrabold uppercase tracking-wider mb-3">
+                                One-Time All-Inclusive Investment
+                            </span>
+                            <h3 class="font-display font-extrabold text-2xl text-navy-900">
+                                Complete Merchant Exporter Incubation & Trade Network
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Telugu + English Mix • Complete Mentorship + Full Vendor & Logistics Backbone
+                            </p>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-500 block mb-1">One-Time Total Fee</span>
+                            <div class="font-display font-extrabold text-4xl sm:text-5xl text-navy-900 tracking-tight">
+                                ₹2,47,000
+                            </div>
+                            <span class="inline-block mt-2 px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-extrabold border border-emerald-200">
+                                Inclusive of 18% GST (Tax Invoice Provided)
+                            </span>
+                        </div>
+
+                        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-500"></i><span><strong>370+ Inland, 370+ Shipping & 370+ Air</strong> Logistics Partners</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-500"></i><span><strong>400+ CHA Agents</strong> (Indian Export & Origin/Dest. Import Clearance)</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-500"></i><span><strong>100+ Cold Storages & 40+ Packaging Units</strong> (50g to 50kg Bulk)</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-500"></i><span><strong>Editable Quotation, Proforma & Commercial Invoice</strong> Templates</span></li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-gold-500"></i><span><strong>Telugu + English Incubation</strong> + <strong>DITC Trade Desk ($100K+ Backing)</strong></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3 pt-6">
+                        <button onclick="openEnrollModal('Akhil Global Exports Incubation Program (₹2,47,000 Incl. GST)')" class="w-full py-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-extrabold text-base border border-gold-500/50 shadow-lg transition-all transform hover:-translate-y-0.5 cursor-pointer">
+                            Apply for Admission Now
+                        </button>
+                        <a href="https://wa.me/917330809531?text=Hello%20Akhil%20Global%20Exports%2C%20I%20want%20to%20join%20the%20Merchant%20Exporter%20Incubation%20Program%20and%20get%20access%20to%20your%20verified%20trade%20network." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>WhatsApp Admissions: +91 73308 09531</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DITC Trade Desk & $100K+ Order Financial Support Highlight -->
+            <div class="bg-navy-900 text-white rounded-3xl p-8 sm:p-12 border-2 border-gold-500 shadow-2xl">
+                <div class="max-w-4xl mx-auto text-center space-y-5">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500 text-navy-950 font-extrabold text-xs uppercase tracking-widest">
+                        <i class="fa-solid fa-landmark"></i> Institutional Trade Backing
+                    </div>
+                    <h3 class="font-display font-extrabold text-2xl sm:text-4xl text-white">
+                        Direct Access to the <span class="text-gold-400">DITC Trade Desk</span> & Financial Support for <span class="text-emerald-400">$100,000+ USD Orders</span>
+                    </h3>
+                    <p class="text-sm sm:text-lg text-slate-200 leading-relaxed max-w-3xl mx-auto">
+                        When you crack high-value export orders of <strong class="text-white">$100,000 USD and above</strong>, you never have to walk away due to working-capital limits—Akhil Global Exports backs qualified members directly through our DITC Trade Desk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 9. WHO THIS EXPORT INCUBATION PROGRAM IS BUILT FOR (TWO CORE PERSONAS) ==================== -->
+    <section id="target-personas" class="py-16 lg:py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 font-bold text-xs uppercase tracking-wider mb-3">
+                    Smart Career & Wealth Decision
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-navy-900">
+                    Who This Export Incubation Program Is Built For
+                </h2>
+                <p class="text-slate-600 mt-3 text-base sm:text-lg">
+                    Whether you are launching your career right after college or looking to break free from a stagnant monthly salary, this program turns <strong class="text-navy-900">₹2.47 Lakhs</strong> into a lifelong global trading enterprise.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                <!-- PERSONA 1: STUDENTS & YOUNG GRADUATES (AGES 21–30) — MINI-MBA ALTERNATIVE -->
+                <div class="lg:col-span-5 bg-slate-50 rounded-3xl p-7 sm:p-9 border border-slate-200 executive-shadow flex flex-col justify-between">
+                    <div class="space-y-5">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3.5 py-1 rounded-full bg-navy-900 text-gold-400 text-xs font-extrabold uppercase tracking-wider">
+                                Ages 21 – 30 • Students & Graduates
+                            </span>
+                            <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+                                Save ₹12L – ₹22L vs. MBA
+                            </span>
+                        </div>
+
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-navy-900 leading-tight">
+                            The Practical Mini-MBA Alternative at a Fraction of the Cost
+                        </h3>
+
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Why spend <strong class="text-navy-900">₹15 Lakhs to ₹25 Lakhs</strong> and two full years on a theoretical MBA degree only to hunt for an entry-level job? Experience hands-on <strong class="text-navy-900">MBA-level business execution</strong> from Day 1 while building your own registered export company.
+                        </p>
+
+                        <div class="bg-white rounded-2xl p-5 border border-slate-200 space-y-3">
+                            <span class="text-xs font-extrabold uppercase tracking-wider text-navy-900 block">Real-World MBA Pillars You Master:</span>
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 font-medium">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mt-0.5"></i>
+                                    <span><strong>End-to-End Supply Chain Management:</strong> Pan-India factory procurement, 50g–50kg packaging, cold chain & port logistics.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mt-0.5"></i>
+                                    <span><strong>Company Incorporation & Compliance:</strong> Legal setup, DGFT policies, GST LUT, IEC & international trade contracts.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mt-0.5"></i>
+                                    <span><strong>Global B2B Sales Structure:</strong> Cold-Call-to-Zoom closing, LinkedIn outreach, Embassy buyer data & negotiation.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mt-0.5"></i>
+                                    <span><strong>Cash Flow, Working Capital & Trade Finance:</strong> FOB/CIF pricing, Letters of Credit (LC), ECGC & $100K+ DITC backing.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <button onclick="openEnrollModal('Student & Graduate Mini-MBA Track (Ages 21-30)')" class="w-full py-3.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-extrabold text-sm shadow-md transition-all cursor-pointer flex items-center justify-center gap-2">
+                            <span>Start Your Practical Mini-MBA Journey</span>
+                            <i class="fa-solid fa-arrow-right text-gold-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PERSONA 2: WORKING PROFESSIONALS & SALARIED EMPLOYEES (AGES 25–35) — ROYAL ENFIELD BULLET COMPARISON -->
+                <div class="lg:col-span-7 bg-navy-900 text-white rounded-3xl p-7 sm:p-9 border-2 border-gold-500 shadow-2xl flex flex-col justify-between">
+                    <div class="space-y-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2">
+                            <span class="px-3.5 py-1 rounded-full bg-gold-500 text-navy-950 text-xs font-extrabold uppercase tracking-wider">
+                                Ages 25 – 35 • IT, Sales, Sales Managers, Private & Govt Employees
+                            </span>
+                            <span class="text-xs font-extrabold text-gold-300">
+                                <i class="fa-solid fa-hand-holding-dollar mr-1"></i>Personal Loan / EMI Assistance Available
+                            </span>
+                        </div>
+
+                        <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white leading-tight">
+                            Invest in an Income-Generating Export Asset Instead of a Depreciating Liability
+                        </h3>
+
+                        <!-- Visual Royal Enfield Bullet Photo + Side-by-Side Financial Comparison -->
+                        <div class="grid md:grid-cols-12 gap-5 items-center bg-navy-950/80 rounded-2xl p-4 sm:p-5 border border-white/10">
+                            <!-- Royal Enfield Bullet Photo -->
+                            <div class="md:col-span-5 relative rounded-xl overflow-hidden aspect-[4/3] border border-white/15 bg-navy-800">
+                                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80"
+                                     alt="Royal Enfield Bullet Motorcycle vs Export Company Investment"
+                                     class="w-full h-full object-cover"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x450/0B192C/D99B26?text=Royal+Enfield+Bullet+~2.8L';">
+                                <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                                <span class="absolute bottom-2.5 left-2.5 right-2.5 text-[11px] font-extrabold text-amber-300 bg-navy-950/90 px-2.5 py-1 rounded-lg border border-amber-500/30 text-center">
+                                    Royal Enfield Bullet: ~₹2.5L – ₹3.0L On-Road
+                                </span>
+                            </div>
+
+                            <!-- Side-by-Side Comparison Matrix -->
+                            <div class="md:col-span-7 space-y-3 text-xs sm:text-sm">
+                                <div class="p-3.5 rounded-xl bg-red-950/50 border border-red-500/30">
+                                    <div class="flex items-center justify-between font-extrabold text-red-300 mb-1">
+                                        <span><i class="fa-solid fa-circle-xmark mr-1.5"></i>Buying a Royal Enfield Bullet Bike</span>
+                                        <span>₹2.5L – ₹3.0L</span>
+                                    </div>
+                                    <p class="text-slate-300 text-xs leading-relaxed">
+                                        Monthly bike EMI + fuel + maintenance outflow every single month, immediate depreciation the moment it leaves the showroom, and <strong class="text-white">zero financial return</strong>.
+                                    </p>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40">
+                                    <div class="flex items-center justify-between font-extrabold text-emerald-300 mb-1">
+                                        <span><i class="fa-solid fa-circle-check mr-1.5"></i>Building Your Global Export Company</span>
+                                        <span>₹2.47 Lakhs</span>
+                                    </div>
+                                    <p class="text-slate-200 text-xs leading-relaxed">
+                                        Use a simple <strong class="text-gold-300">personal loan or easy EMI assistance</strong> to launch a global merchant export business—earning <strong class="text-emerald-300">USD container profits</strong> that pay off your EMI and secure your family's future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Whether you work in <strong class="text-white">IT, B2B/B2C Sales, Sales Management, Corporate Private Sector, or Government Service</strong>, you already have the discipline and communication skills. Plug into our <strong class="text-gold-300">1,510+ verified logistics & clearance partners</strong>, build your export venture alongside your job, and transition into full financial independence.
+                        </p>
+                    </div>
+
+                    <div class="pt-6 flex flex-col sm:flex-row gap-3">
+                        <button onclick="openEnrollModal('Working Professional Track + Financial/Loan Assistance (Ages 25-35)')" class="flex-1 py-3.5 px-5 rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 font-extrabold text-sm shadow-lg transition-all cursor-pointer flex items-center justify-center gap-2">
+                            <span>Apply with Personal Loan / EMI Guidance</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="https://wa.me/917330809531?text=Hello%20Akhil%20Global%20Exports%2C%20I%20am%20a%20working%20professional%20interested%20in%20building%20my%20export%20company%20and%20learning%20about%20personal%20loan%20%2F%20EMI%20assistance." target="_blank" rel="noopener noreferrer" class="py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-colors flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Ask About EMI Options</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-white text-slate-600 border-t border-slate-200 pt-14 pb-10 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-slate-200">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="WhatsApp Image 2026-09-20 at 11.28.44 AM.jpeg"
+                             alt="NextGen Exporters Logo"
+                             class="w-11 h-11 rounded-xl bg-white border border-slate-200 p-1 object-contain"
+                             onerror="this.onerror=null; this.src='https://placehold.co/80x80/FFFFFF/0B192C?text=NEXTGEN';">
+                        <div>
+                            <span class="font-display font-extrabold text-base text-navy-900 block leading-none">NEXTGEN <span class="text-gold-500">EXPORTERS</span></span>
+                            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">by Akhil Global Exports</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Akhil Global Exports Merchant Exporter Incubation Program — “We don't experience Business here. We just silently Build it.”
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="font-display font-extrabold text-navy-900 text-xs uppercase tracking-wider mb-4">Program Sections</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#product-ranges" class="hover:text-navy-900 transition-colors">Exportable Product Ranges & USP</a></li>
+                        <li><a href="#curriculum" class="hover:text-navy-900 transition-colors">Curriculum & Checklists</a></li>
+                        <li><a href="#trade-network" class="hover:text-navy-900 transition-colors">1,510+ Verified Trade Network</a></li>
+                        <li><a href="#target-personas" class="hover:text-navy-900 transition-colors">Students (Mini-MBA) & Employees</a></li>
+                    </ul>
+                </div>
+
+                <!-- Trade Portals -->
+                <div>
+                    <h4 class="font-display font-extrabold text-navy-900 text-xs uppercase tracking-wider mb-4">Official Trade Portals</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="https://udyamregistration.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-navy-900 transition-colors">Udyam MSME Registration Portal</a></li>
+                        <li><a href="https://www.dgft.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-navy-900 transition-colors">DGFT India (IEC & Trade Policy)</a></li>
+                        <li><a href="https://apeda.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-navy-900 transition-colors">APEDA (Agri & Processed Foods)</a></li>
+                        <li><a href="https://www.ecgc.in" target="_blank" rel="noopener noreferrer" class="hover:text-navy-900 transition-colors">ECGC Export Credit Guarantee</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Desk -->
+                <div>
+                    <h4 class="font-display font-extrabold text-navy-900 text-xs uppercase tracking-wider mb-4">Akhil Global Exports Desk</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-user-tie text-gold-500"></i>
+                            <span class="font-semibold text-navy-900">Akhil Kumar Ponnam</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+                            <a href="https://wa.me/917330809531" target="_blank" rel="noopener noreferrer" class="hover:text-navy-900 font-medium">+91 73308 09531</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-gold-500"></i>
+                            <a href="mailto:grow@akhilglobalexports.com" class="hover:text-navy-900 font-medium">grow@akhilglobalexports.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>© 2026 NextGen Exporters by Akhil Global Exports. All Rights Reserved.</p>
+                <p class="font-bold text-navy-900">“Be a student who learns and earns as well.”</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== ADMISSION APPLICATION MODAL ==================== -->
+    <div id="enrollModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm no-print">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200">
+            <div class="bg-navy-900 px-6 py-5 flex items-center justify-between text-white border-b border-gold-500/30">
+                <div>
+                    <span class="text-[11px] font-extrabold uppercase tracking-wider text-gold-400">Akhil Global Exports Admissions</span>
+                    <h3 id="modalHeading" class="font-display font-bold text-lg sm:text-xl">Apply for Incubation</h3>
+                </div>
+                <button onclick="closeEnrollModal()" aria-label="Close Modal" class="w-9 h-9 rounded-xl bg-navy-800 hover:bg-navy-700 text-slate-300 hover:text-white flex items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form id="enrollForm" onsubmit="handleEnrollSubmit(event)" class="p-6 sm:p-8 space-y-4">
+                <input type="hidden" id="enrollContext" value="Akhil Global Exports Merchant Exporter Incubation Program">
+
+                <div>
+                    <label for="appName" class="block text-xs font-bold uppercase text-slate-600 mb-1">Full Name *</label>
+                    <input type="text" id="appName" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-sm font-medium text-navy-900 focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="appPhone" class="block text-xs font-bold uppercase text-slate-600 mb-1">WhatsApp Mobile Number *</label>
+                        <input type="tel" id="appPhone" required placeholder="+91 98480 XXXXX" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-sm font-medium text-navy-900 focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label for="appLocation" class="block text-xs font-bold uppercase text-slate-600 mb-1">City / State *</label>
+                        <input type="text" id="appLocation" required placeholder="e.g., Hyderabad, Vijayawada, Vizag" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-sm font-medium text-navy-900 focus:outline-none focus:border-gold-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="appRegOption" class="block text-xs font-bold uppercase text-slate-600 mb-1">Preferred Registration Path *</label>
+                    <select id="appRegOption" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-sm font-medium text-navy-900 focus:outline-none focus:border-gold-500">
+                        <option value="Option 1: DIY with Accountability Partner (₹500 Sole Proprietor)">Option 1: DIY with Accountability Partner (₹500 Sole Proprietor)</option>
+                        <option value="Option 2: Own Chartered Accountant (Private Limited)">Option 2: Own Chartered Accountant (Private Limited)</option>
+                        <option value="Option 3: Recommended CA Partner Network (Discounted Rate)">Option 3: Recommended CA Partner Network (Discounted Rate)</option>
+                        <option value="Already Have Udyam, GST, IEC & Current Account">Already Have Udyam, GST, IEC & Current Account</option>
+                    </select>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950">
+                    <strong>One-Time Fee:</strong> ₹2,47,000 (Inclusive of 18% GST) • Personal Loan / EMI Assistance Available • Includes 1,510+ Logistics/CHA/Cold Storage/Packaging Network, Editable Trade Templates & DITC Trade Desk.
+                </div>
+
+                <div id="enrollError" class="hidden text-xs font-semibold text-red-600 bg-red-50 p-3 rounded-xl border border-red-200"></div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-extrabold text-sm border border-gold-500/40 shadow-lg transition-all cursor-pointer">
+                    Submit Admission Request
+                </button>
+            </form>
+
+            <!-- Confirmation View -->
+            <div id="enrollSuccess" class="hidden p-8 text-center space-y-4">
+                <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div id="enrollRefBadge" class="inline-block px-3 py-1 rounded-full bg-navy-900 text-gold-400 text-xs font-bold uppercase tracking-wider">
+                    APP ID: NEXTGEN-2026
+                </div>
+                <h4 class="font-display font-extrabold text-2xl text-navy-900">Application Received!</h4>
+                <p id="enrollSuccessMsg" class="text-sm text-slate-600 leading-relaxed"></p>
+                <div class="pt-2 flex flex-col gap-2">
+                    <a href="https://wa.me/917330809531?text=Hello%20Akhil%20Global%20Exports%2C%20I%20have%20submitted%20my%20admission%20application%20for%20the%20Merchant%20Exporter%20Incubation%20Program." target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Connect on WhatsApp (+91 73308 09531)
+                    </a>
+                    <button onclick="closeEnrollModal()" class="w-full py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold text-xs cursor-pointer">
+                        Return to Page
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification -->
+    <div id="toastBox" class="fixed bottom-5 right-5 z-50 hidden max-w-sm bg-navy-900 text-white px-5 py-4 rounded-2xl shadow-2xl border border-gold-500/40 flex items-center gap-3 no-print">
+        <i class="fa-solid fa-circle-check text-gold-400 text-xl"></i>
+        <p id="toastMessage" class="text-sm font-medium"></p>
+    </div>
+
+    <!-- ==================== INTERACTIVE JAVASCRIPT ==================== -->
+    <script>
+        const STORAGE_KEY = 'nextgen_akhil_global_checklists_v3';
+
+        const exportProductRanges = [
+            {
+                id: 'prod_rice',
+                cat: 'agro',
+                badge: 'Grains & Cereals',
+                title: 'Premium Rice & Millets',
+                items: '1121 Basmati, Sona Masoori, IR64 Parboiled, Foxtail, Pearl & Finger Millets',
+                markets: 'Africa, Asia & North America',
+                img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Premium+Rice+%26+Millets'
+            },
+            {
+                id: 'prod_spices',
+                cat: 'agro',
+                badge: 'Whole & Ground Spices',
+                title: 'Whole & Ground Spices',
+                items: 'Guntur Teja Chilli, High-Curcumin Turmeric, Black Pepper, Green Cardamom & Cumin',
+                markets: 'North America, Asia & Africa',
+                img: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Whole+%26+Ground+Spices'
+            },
+            {
+                id: 'prod_pulses',
+                cat: 'agro',
+                badge: 'Pulses & Oilseeds',
+                title: 'Pulses, Grains & Oilseeds',
+                items: 'Toor Dal, Kabuli Chickpeas, Bold Peanuts, Hulled Sesame Seeds & Maize',
+                markets: 'Asia, Africa & North America',
+                img: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Pulses%2C+Grains+%26+Oilseeds'
+            },
+            {
+                id: 'prod_coffee',
+                cat: 'agro',
+                badge: 'Plantation & Botanicals',
+                title: 'Coffee, Tea & Botanicals',
+                items: 'Araku & Chikmagalur Arabica/Robusta Coffee, Assam/Nilgiri Tea & Organic Moringa',
+                markets: 'North America & Asia',
+                img: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Coffee%2C+Tea+%26+Botanicals'
+            },
+            {
+                id: 'prod_dehydrated',
+                cat: 'agro',
+                badge: 'Agro-Processed',
+                title: 'Dehydrated Foods & Powders',
+                items: 'Dehydrated White/Red Onion Flakes, Garlic Granules, Ginger & Spray-Dried Fruit Powders',
+                markets: 'North America, Asia & Africa',
+                img: 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Dehydrated+Foods'
+            },
+            {
+                id: 'prod_chemicals',
+                cat: 'industrial',
+                badge: 'Industrial Chemicals',
+                title: 'Industrial Chemicals & Caustic Soda',
+                items: 'Caustic Soda Flakes/Pearls, Soda Ash, Water Treatment & Specialty Industrial Chemicals',
+                markets: 'Africa & Southeast Asia',
+                img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Chemicals+%26+Caustic+Soda'
+            },
+            {
+                id: 'prod_engineering',
+                cat: 'industrial',
+                badge: 'Engineering & Hardware',
+                title: 'Engineering Goods, Hardware & Auto Parts',
+                items: 'Precision Castings, Industrial Valves, High-Tensile Fasteners & Auto Components',
+                markets: 'North America, Africa & Asia',
+                img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Engineering+%26+Auto+Parts'
+            },
+            {
+                id: 'prod_healthcare',
+                cat: 'healthcare',
+                badge: 'Medical & Rehab',
+                title: 'Healthcare, Medical & Rehab Supplies',
+                items: 'Orthopaedic Braces, Mobility Aids, Hospital Consumables & Rehabilitation Devices',
+                markets: 'Africa, Asia & North America',
+                img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80',
+                fallback: 'https://placehold.co/600x400/0B192C/D99B26?text=Healthcare+%26+Medical+Devices'
+            }
+        ];
+
+        function renderProductRanges(category = 'all') {
+            const grid = document.getElementById('productRangesGrid');
+            if (!grid) return;
+            const filtered = category === 'all'
+                ? exportProductRanges
+                : exportProductRanges.filter(item => item.cat === category);
+
+            grid.innerHTML = filtered.map(prod => `
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:border-gold-500 executive-shadow transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-44 overflow-hidden bg-navy-900">
+                            <img src="${prod.img}"
+                                 alt="${prod.title}"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.onerror=null; this.src='${prod.fallback}';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/75 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 font-extrabold text-[11px] uppercase tracking-wider border border-gold-500/30">
+                                ${prod.badge}
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-lg text-navy-900 mb-1.5">${prod.title}</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">${prod.items}</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold">
+                        <span class="text-emerald-700"><i class="fa-solid fa-globe mr-1"></i>${prod.markets}</span>
+                        <span class="text-gold-600">50g–50kg Ready</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterProductRanges(category) {
+            document.querySelectorAll('.prod-filter-btn').forEach(btn => {
+                if (btn.dataset.cat === category) {
+                    btn.className = 'prod-filter-btn px-4 py-2 rounded-full bg-navy-900 text-white text-xs sm:text-sm font-bold shadow-sm cursor-pointer transition-all';
+                } else {
+                    btn.className = 'prod-filter-btn px-4 py-2 rounded-full bg-white hover:bg-slate-100 text-navy-900 border border-slate-200 text-xs sm:text-sm font-bold cursor-pointer transition-all';
+                }
+            });
+            renderProductRanges(category);
+        }
+
+        const registrationItems = [
+            { id: 'reg_1', num: '01', title: 'Udyam Registration', desc: 'Official MSME enterprise registration certificate.' },
+            { id: 'reg_2', num: '02', title: 'GST Registration', desc: 'Goods & Services Tax registration + LUT for zero-rated exports.' },
+            { id: 'reg_3', num: '03', title: 'Import Export Code (IEC)', desc: 'DGFT 10-digit Importer-Exporter Code mandatory for customs.' },
+            { id: 'reg_4', num: '04', title: 'Current Bank Account', desc: 'Dedicated export business current account with AD Code readiness.' }
+        ];
+
+        const classroom1Items = [
+            { id: 'c1_01', num: '01', title: '7-Step Export Business Framework', desc: 'Complete end-to-end roadmap from setup to USD realization.' },
+            { id: 'c1_02', num: '02', title: 'DGFT Product Selection', desc: 'Selecting high-demand, compliance-ready Indian export products.' },
+            { id: 'c1_03', num: '03', title: 'Product Categorization', desc: 'Segmenting bulk commodities, value-added goods & private-label SKUs.' },
+            { id: 'c1_04', num: '04', title: 'Product Cycle', desc: 'Understanding harvest seasons, shelf life & global buying windows.' },
+            { id: 'c1_05', num: '05', title: 'Buyer Quadrant', desc: 'Mapping wholesalers, distributors, retail chains & institutional importers.' },
+            { id: 'c1_06', num: '06', title: 'Product × Buyer Matrix', desc: 'Aligning exact product grades & packaging to target buyer segments.' },
+            { id: 'c1_07', num: '07', title: 'Embassy Data Outreach', desc: 'Sourcing verified importer lists via Indian Embassies worldwide.' },
+            { id: 'c1_08', num: '08', title: 'Complete Guide on Merchant Exporting Model', desc: 'Operating asset-light with verified factories & packaging houses.' },
+            { id: 'c1_09', num: '09', title: 'Export Pricing Master Class', desc: 'Structuring accurate EXW, FOB & CIF buyer quotations.' },
+            { id: 'c1_10', num: '10', title: 'Incoterms', desc: 'Practical risk, freight & insurance allocation across trade terms.' },
+            { id: 'c1_11', num: '11', title: 'Supply, Demand & Price Relation', desc: 'Tracking domestic price movements before locking Proforma Invoices.' },
+            { id: 'c1_12', num: '12', title: 'Strict Payment Methods', desc: 'Securing capital via Irrevocable LC, Advance TT & ECGC cover.' },
+            { id: 'c1_13', num: '13', title: 'How to Calculate Your Profit Margin', desc: 'Factoring landed costs, FX rates, buffers & RoDTEP incentives.' },
+            { id: 'c1_14', num: '14', title: 'Difference Between FCL, LCL & Courier', desc: 'Choosing Full Container, Less-than-Container & Air Courier modes.' },
+            { id: 'c1_15', num: '15', title: 'Checklist to Enter into the Market (Printable Copy)', desc: 'Pre-launch market readiness verification sheet.' },
+            { id: 'c1_16', num: '16', title: 'How to Talk to Manufacturers', desc: 'Negotiating direct factory rates, MOQs & non-circumvention.' },
+            { id: 'c1_17', num: '17', title: 'How to Talk to Logistics & Shipping Partners', desc: 'Obtaining competitive ocean/air freight, THC & CHA quotes.' },
+            { id: 'c1_18', num: '18', title: 'Field Assignments to Finish', desc: 'Practical verification, supplier visits & costing submissions.' }
+        ];
+
+        const classroom2Items = [
+            { id: 'c2_01', num: '01', title: 'Cold Call to Zoom', desc: 'Exact framework on how to bring a cold buyer call onto a live Zoom call.' },
+            { id: 'c2_02', num: '02', title: 'Export Sales 101', desc: 'How to build a predictable B2B export sales funnel for your own company.' },
+            { id: 'c2_03', num: '03', title: 'How to Build Need and Trust', desc: 'Positioning your Indian merchant company as a credible global supplier.' },
+            { id: 'c2_04', num: '04', title: 'Negotiation Buffer & Closing', desc: 'Structuring smart pricing room to negotiate confidently and close deals.' },
+            { id: 'c2_05', num: '05', title: 'Push Marketing vs. Pull Marketing', desc: 'Combining proactive buyer outreach with inbound authority.' },
+            { id: 'c2_06', num: '06', title: 'Tools + Action + Backend', desc: 'Setting up outreach tools, daily action cadence & CRM backend.' },
+            { id: 'c2_07', num: '07', title: 'How to Use Tools for LinkedIn Marketing', desc: 'Targeting international procurement decision-makers on LinkedIn.' },
+            { id: 'c2_08', num: '08', title: 'How to Build a Lead Bucket List', desc: 'Building and segmenting a high-converting global buyer database.' }
+        ];
+
+        let checkedState = {};
+
+        function loadChecklistState() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) checkedState = JSON.parse(saved);
+            } catch (e) {
+                checkedState = {};
+            }
+        }
+
+        function saveChecklistState() {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedState));
+            } catch (e) {}
+        }
+
+        function toggleCheckItem(id) {
+            checkedState[id] = !checkedState[id];
+            saveChecklistState();
+            renderAllChecklists();
+        }
+
+        function renderAllChecklists() {
+            const regGrid = document.getElementById('regChecklistGrid');
+            regGrid.innerHTML = registrationItems.map(item => {
+                const isDone = !!checkedState[item.id];
+                return `
+                    <label class="flex items-start gap-3 p-4 rounded-2xl border ${isDone ? 'bg-emerald-50/70 border-emerald-300' : 'bg-white border-slate-200 hover:border-gold-500'} cursor-pointer transition-all select-none">
+                        <input type="checkbox" ${isDone ? 'checked' : ''} onchange="toggleCheckItem('${item.id}')" class="mt-1 w-4 h-4 accent-emerald-600 rounded cursor-pointer">
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-wider ${isDone ? 'text-emerald-700' : 'text-gold-600'} block">Item ${item.num}</span>
+                            <strong class="font-display font-bold text-sm text-navy-900 block ${isDone ? 'line-through text-emerald-950' : ''}">${item.title}</strong>
+                            <span class="text-xs text-slate-500 block mt-0.5">${item.desc}</span>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+
+            const c1Grid = document.getElementById('classroom1Grid');
+            c1Grid.innerHTML = classroom1Items.map(item => {
+                const isDone = !!checkedState[item.id];
+                return `
+                    <label class="flex items-start gap-3 p-4 rounded-2xl border ${isDone ? 'bg-emerald-50/70 border-emerald-300' : 'bg-slate-50 border-slate-200 hover:border-gold-500'} cursor-pointer transition-all select-none">
+                        <input type="checkbox" ${isDone ? 'checked' : ''} onchange="toggleCheckItem('${item.id}')" class="mt-1 w-4 h-4 accent-emerald-600 rounded cursor-pointer">
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-wider ${isDone ? 'text-emerald-700' : 'text-gold-600'} block">Module ${item.num}</span>
+                            <strong class="font-display font-bold text-sm text-navy-900 block ${isDone ? 'line-through text-emerald-950' : ''}">${item.title}</strong>
+                            <span class="text-xs text-slate-500 block mt-0.5">${item.desc}</span>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+
+            const c2Grid = document.getElementById('classroom2Grid');
+            c2Grid.innerHTML = classroom2Items.map(item => {
+                const isDone = !!checkedState[item.id];
+                return `
+                    <label class="flex items-start gap-3 p-4 rounded-2xl border ${isDone ? 'bg-emerald-50/70 border-emerald-300' : 'bg-white border-slate-200 hover:border-gold-500'} cursor-pointer transition-all select-none">
+                        <input type="checkbox" ${isDone ? 'checked' : ''} onchange="toggleCheckItem('${item.id}')" class="mt-1 w-4 h-4 accent-emerald-600 rounded cursor-pointer">
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-wider ${isDone ? 'text-emerald-700' : 'text-gold-600'} block">Sales ${item.num}</span>
+                            <strong class="font-display font-bold text-sm text-navy-900 block ${isDone ? 'line-through text-emerald-950' : ''}">${item.title}</strong>
+                            <span class="text-xs text-slate-500 block mt-0.5">${item.desc}</span>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+
+            updateProgressIndicators();
+        }
+
+        function updateProgressIndicators() {
+            const regDone = registrationItems.filter(i => checkedState[i.id]).length;
+            const c1Done = classroom1Items.filter(i => checkedState[i.id]).length;
+            const c2Done = classroom2Items.filter(i => checkedState[i.id]).length;
+
+            const regPct = Math.round((regDone / registrationItems.length) * 100);
+            const c1Pct = Math.round((c1Done / classroom1Items.length) * 100);
+            const c2Pct = Math.round((c2Done / classroom2Items.length) * 100);
+
+            document.getElementById('regProgressText').textContent = `${regDone} / ${registrationItems.length} Completed (${regPct}%)`;
+            document.getElementById('regProgressBar').style.width = `${regPct}%`;
+
+            document.getElementById('c1ProgressBadge').textContent = `${c1Done} / ${classroom1Items.length} Completed (${c1Pct}%)`;
+            document.getElementById('c1ProgressBar').style.width = `${c1Pct}%`;
+
+            document.getElementById('c2ProgressBadge').textContent = `${c2Done} / ${classroom2Items.length} Completed (${c2Pct}%)`;
+            document.getElementById('c2ProgressBar').style.width = `${c2Pct}%`;
+
+            document.getElementById('c3RegStat').textContent = `${regDone} / ${registrationItems.length}`;
+            document.getElementById('c3C1Stat').textContent = `${c1Done} / ${classroom1Items.length}`;
+            document.getElementById('c3C2Stat').textContent = `${c2Done} / ${classroom2Items.length}`;
+
+            const statusPill = document.getElementById('c3StatusPill');
+            const unlockMsg = document.getElementById('c3UnlockMessage');
+
+            if (regDone === registrationItems.length && c1Done === classroom1Items.length && c2Done === classroom2Items.length) {
+                statusPill.className = "px-3 py-1 rounded-full bg-emerald-500 text-navy-950 text-xs font-extrabold";
+                statusPill.innerHTML = `<i class="fa-solid fa-unlock mr-1"></i>Unlocked & Eligible`;
+                unlockMsg.className = "text-xs text-emerald-300 font-semibold";
+                unlockMsg.textContent = "All milestones complete! You qualify for the 2x/week Live Reporting Classroom.";
+            } else {
+                statusPill.className = "px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-extrabold";
+                statusPill.innerHTML = `<i class="fa-solid fa-lock mr-1"></i>In Progress`;
+                unlockMsg.className = "text-xs text-slate-400";
+                unlockMsg.textContent = "Tick off all items in Step 0, Classroom 1, and Classroom 2 above to unlock your weekly Live Reporting seat.";
+            }
+        }
+
+        // FOB / CIF Export Pricing Calculator
+        function calculateExportQuote() {
+            const units = Math.max(1, parseFloat(document.getElementById('calcUnits').value) || 1);
+            const procure = parseFloat(document.getElementById('calcProcure').value) || 0;
+            const packaging = parseFloat(document.getElementById('calcPackaging').value) || 0;
+            const portCha = parseFloat(document.getElementById('calcPortCha').value) || 0;
+            const freight = parseFloat(document.getElementById('calcFreight').value) || 0;
+            const usdRate = parseFloat(document.getElementById('calcUsdRate').value) || 84.5;
+            const marginPct = parseFloat(document.getElementById('calcMargin').value) || 0;
+            const rodtepPct = parseFloat(document.getElementById('calcRodtep').value) || 0;
+
+            document.getElementById('calcMarginLabel').textContent = `${marginPct}%`;
+            document.getElementById('calcRodtepLabel').textContent = `${rodtepPct}%`;
+
+            const baseCostInr = procure + packaging + portCha;
+            const marginInr = baseCostInr * (marginPct / 100);
+            const fobInr = baseCostInr + marginInr;
+            const cifInr = fobInr + freight;
+
+            const fobUsd = fobInr / usdRate;
+            const cifUsd = cifInr / usdRate;
+
+            const fobPerUnit = fobUsd / units;
+            const cifPerUnit = cifUsd / units;
+
+            const rodtepInr = fobInr * (rodtepPct / 100);
+            const netProfitInr = marginInr + rodtepInr;
+
+            const fmtINR = (n) => '₹' + Math.round(n).toLocaleString('en-IN');
+            const fmtUSD = (n) => '$' + Math.round(n).toLocaleString('en-US') + ' USD';
+
+            document.getElementById('outFobUsd').textContent = fmtUSD(fobUsd);
+            document.getElementById('outFobUnit').textContent = `$${fobPerUnit.toFixed(2)} / unit`;
+            document.getElementById('outFobInr').textContent = `${fmtINR(fobInr)} INR Base FOB Value`;
+
+            document.getElementById('outCifUsd').textContent = fmtUSD(cifUsd);
+            document.getElementById('outCifUnit').textContent = `$${cifPerUnit.toFixed(2)} / unit`;
+            document.getElementById('outCifInr').textContent = `${fmtINR(cifInr)} INR Total CIF Invoice`;
+
+            document.getElementById('outNetProfit').textContent = fmtINR(netProfitInr);
+            document.getElementById('outIncentiveSplit').textContent = `Includes ${fmtINR(rodtepInr)} RoDTEP export incentive`;
+        }
+
+        function resetCalculator() {
+            document.getElementById('calcUnits').value = 25000;
+            document.getElementById('calcProcure').value = 1050000;
+            document.getElementById('calcPackaging').value = 65000;
+            document.getElementById('calcPortCha').value = 55000;
+            document.getElementById('calcFreight').value = 140000;
+            document.getElementById('calcUsdRate').value = 84.50;
+            document.getElementById('calcMargin').value = 18;
+            document.getElementById('calcRodtep').value = 1.5;
+            calculateExportQuote();
+            showToast("Calculator reset to 25 MT container sample.");
+        }
+
+        // Mobile Menu & Modal Controls
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.add('hidden');
+        }
+
+        function openEnrollModal(context) {
+            const modal = document.getElementById('enrollModal');
+            document.getElementById('enrollForm').classList.remove('hidden');
+            document.getElementById('enrollSuccess').classList.add('hidden');
+            document.getElementById('enrollError').classList.add('hidden');
+            document.getElementById('enrollContext').value = context;
+            document.getElementById('modalHeading').textContent = context.length > 38 ? "Apply for Incubation" : context;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeEnrollModal() {
+            const modal = document.getElementById('enrollModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function handleEnrollSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('appName').value.trim();
+            const phone = document.getElementById('appPhone').value.trim();
+            const location = document.getElementById('appLocation').value.trim();
+            const regOption = document.getElementById('appRegOption').value;
+            const errEl = document.getElementById('enrollError');
+
+            if (name.length < 2 || phone.length < 10) {
+                errEl.textContent = "Please enter your full name and a valid 10-digit WhatsApp mobile number.";
+                errEl.classList.remove('hidden');
+                return;
+            }
+
+            const appCode = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById('enrollRefBadge').textContent = `APP ID: NEXTGEN-${appCode}`;
+            document.getElementById('enrollSuccessMsg').innerHTML = `
+                Welcome, <strong>${name}</strong> (${location})! Your admission request for the <strong>Akhil Global Exports Merchant Exporter Incubation Program</strong> (Registration Path: <em>${regOption}</em>) has been logged. Our DITC Trade Desk & Admissions team will reach out shortly.
+            `;
+
+            document.getElementById('enrollForm').classList.add('hidden');
+            document.getElementById('enrollSuccess').classList.remove('hidden');
+        }
+
+        let toastTimer;
+        function showToast(msg) {
+            const box = document.getElementById('toastBox');
+            document.getElementById('toastMessage').textContent = msg;
+            box.classList.remove('hidden');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => box.classList.add('hidden'), 3800);
+        }
+
+        document.getElementById('enrollModal').addEventListener('click', (e) => {
+            if (e.target.id === 'enrollModal') closeEnrollModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeEnrollModal();
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProductRanges('all');
+            loadChecklistState();
+            renderAllChecklists();
+            calculateExportQuote();
+        });
+    </script>
+</body>
+</html>
